@@ -24,7 +24,7 @@ public class AutoOrientationPlugin implements MethodCallHandler {
 
   @Override
   public void onMethodCall(MethodCall call, Result result) {
-    Activity activity = registrar.activity();
+    Activity activity = sRegistrar.activity();
     if (activity == null) {
       Log.e("AutoOrientationPlugin", "activity == null");
       return;
